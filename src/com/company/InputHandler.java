@@ -32,8 +32,8 @@ public class InputHandler {
         if(cmdList[0].equalsIgnoreCase("exit")){
             return false;
         }
-        if(commands.containsKey(cmdList[0])){
-            commands.get(cmdList[0]).accept(cmdList);
+        if(commands.containsKey(cmdList[0].toLowerCase())){
+            commands.get(cmdList[0].toLowerCase()).accept(cmdList);
         } else {
             System.out.println("Command not recognized.");
         }
