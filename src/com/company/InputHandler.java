@@ -34,6 +34,8 @@ public class InputHandler {
         }
         if(commands.containsKey(cmdList[0])){
             commands.get(cmdList[0]).accept(cmdList);
+        } else {
+            System.out.println("Command not recognized.");
         }
         return true;
     }
