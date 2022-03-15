@@ -29,7 +29,7 @@ public class InputHandler {
     
     public boolean handle(String command){
         String[] cmdList = command.split(" ");
-        if(cmdList[0].equals("exit")){
+        if(cmdList[0].equalsIgnoreCase("exit")){
             return false;
         }
         if(commands.containsKey(cmdList[0])){
